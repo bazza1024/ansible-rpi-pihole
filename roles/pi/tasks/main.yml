@@ -22,13 +22,13 @@
 - name: Install admin tools (vim, htop, ntop, nmap)
   apt:
     package: "{{ item }}"
-    state: installed
+    state: present
   with_items:
     - python-apt
     - python-pip
     - vim
     - htop
-    - ntop
+    - sntop
     - nmap
     - atop
   tags: admin
